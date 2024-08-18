@@ -60,13 +60,13 @@ def main():
         
         balance -= bet
         
-        row = spin_row()
-        print("Spinning...\n")
-        print_row(row)
-        
+       
         payout = get_payout(row,bet)
         
-       
+        if payout > 0:
+            balance += payout
+            print(f"Congratulations! You won KES.{payout}")
+        else:
             print("Sorry, you lost your bet.")
             
         play_again = input("Do you want to spin again? (Y/N): ") 
