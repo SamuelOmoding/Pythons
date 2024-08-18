@@ -66,7 +66,13 @@ def main():
         
         payout = get_payout(row,bet)
         
-      
+       
+            print("Sorry, you lost your bet.")
+            
+        play_again = input("Do you want to spin again? (Y/N): ") 
+        
+        if play_again.lower()!= "y":
+            break   
     print("*****************************************")      
     print(f"Game over! Your balance is KES.{balance}")
     print("*****************************************")      
