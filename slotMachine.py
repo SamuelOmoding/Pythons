@@ -76,6 +76,9 @@ def main():
         
         if play_again.lower()!= "y":
             break   
+    print("*****************************************")      
+    print(f"Game over! Your balance is KES.{balance}")
+    print("*****************************************")      
 
 
 if __name__ == "__main__":
