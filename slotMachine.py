@@ -60,7 +60,10 @@ def main():
         
         balance -= bet
         
-       
+        row = spin_row()
+        print("Spinning...\n")
+        print_row(row)
+        
         payout = get_payout(row,bet)
         
         if payout > 0:
