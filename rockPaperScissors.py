@@ -7,7 +7,9 @@ while playing:
     player = None
     computer = random.choice(options)
         
-    
+    while player not in options:
+        player = input("Enter a choice (rock, paper, scissors): ").lower()
+
     print(f"Player: {player}")
     print(f"Computer: {computer}")
 
