@@ -39,6 +39,34 @@ def main():
     print("Symbols: 🍒 🍉 🍋 🔔 🟊 ")
     print("***********************")
     
+    while balance > 0:
+        print(f"Current Balance: KES.{balance}")
+        
+        bet = input("Place your bet amount: ")
+                
+        if not bet.isdigit():
+            print("Please enter a positive numeric value.")
+            continue
+        
+        bet = int(bet)
+        
+        if bet > balance:
+            print("Insufficient funds!")
+            continue
+        
+        if bet <= 0:
+            print("Bet amount must be greater than zero.")
+            continue
+        
+        balance -= bet
+        
+        row = spin_row()
+        print("Spinning...\n")
+        print_row(row)
+        
+        payout = get_payout(row,bet)
+        
+      
     print("*****************************************")      
     print(f"Game over! Your balance is KES.{balance}")
     print("*****************************************")      
