@@ -8,6 +8,8 @@ answer = random.randint(lowest_num, highest_num)
 guesses = 0
 is_running = True
 
+print("Python Number Guessing Game")
+print(f"Select a number between {lowest_num} and {highest_num}")
 
 while is_running:
     guess = input("Enter your guess: ")
