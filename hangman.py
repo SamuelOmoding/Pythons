@@ -20,6 +20,8 @@ def display_man(wrong_guesses):
         print(line)
     print("**************")
 
+def display_hint(hint):
+    print(" ".join(hint))
 
 def display_answer(answer):
     print(" ".join(answer))
