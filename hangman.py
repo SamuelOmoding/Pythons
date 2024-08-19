@@ -14,11 +14,6 @@ hangman_art = {
     6: (" o ", "/|\\", "/ \\")
 }
 
-def display_man(wrong_guesses):
-    print("**************")
-    for line in hangman_art[wrong_guesses]:
-        print(line)
-    print("**************")
 
 def display_hint(hint):
     print(" ".join(hint))
